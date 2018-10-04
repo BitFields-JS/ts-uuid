@@ -7,6 +7,6 @@ test('uuid16 - return an string with length of 36 characters', () => {
 
 
 // uuid8
-test('uuid16 - return an string with length of 20 characters', () => {
+test('uuid8 - return an string with length of 20 characters', () => {
   expect(uuid8().length).toBe(20);
 });
