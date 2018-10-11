@@ -7,7 +7,7 @@ import * as crypto from 'crypto';
  */
 export const uuid16 = () => {
   return [4, 2, 2, 2, 6].map(
-    (bin: number) => crypto.randomBytes(bin).toString('hex')
+    (size: number) => crypto.randomBytes(size).toString('hex')
   ).join('-');
 }
 
@@ -18,6 +18,6 @@ export const uuid16 = () => {
  */
 export const uuid8 = () => {
   return [2, 1, 1, 1, 3].map(
-    (bin: number) => crypto.randomBytes(bin).toString('hex')
+    (size: number) => crypto.randomBytes(size).toString('hex')
   ).join('-');
 }
